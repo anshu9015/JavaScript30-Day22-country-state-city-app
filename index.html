@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./app.js"></script>
+</head>
+<body onload="getCountryDetail()">
+    <div class="container">
+        <h3>Country Table List</h3>
+        <input onkeyup="filter()" type="text" id="val">
+        <div class="row">
+            <div class="col">
+                <table id="country">
+                    <tr>
+                        <th>Country</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="col">
+                <table id="state">
+                </table>
+            </div>
+            <div class="col">
+                <table id="city">
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
